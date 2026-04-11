@@ -71,25 +71,25 @@ function DailyPlanner() {
         <div className="space-y-4">
           <div className="flex flex-wrap gap-2">
             <button 
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded-lg font-medium transition-colors"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded-lg font-medium transition-colors"
               onClick={() => setIsAddDialogOpen(true)}
             >
               + Add Task
             </button>
             <button 
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded-lg font-medium transition-colors"
+              className="bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded-lg font-medium transition-colors"
               onClick={() => changeDate(-1)}
             >
               Yesterday
             </button>
             <button 
-              className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-1 rounded-lg font-medium transition-colors"
+              className="bg-indigo-500 hover:bg-indigo-600 text-white px-2 py-1 rounded-lg font-medium transition-colors"
               onClick={() => changeDate(1)}
             >
               Tomorrow
             </button>
             <button 
-              className="bg-purple-500 hover:bg-purple-600 text-white px-4 py-1 rounded-lg font-medium transition-colors"
+              className="bg-purple-500 hover:bg-purple-600 text-white px-2 py-1 rounded-lg font-medium transition-colors"
               onClick={() => setSelectedDate(new Date())}
             >
               Today

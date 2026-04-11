@@ -5,8 +5,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
-    <div className='max-w-4xl mx-auto px-4'>
+    <div className='min-h-screen px-1 bg-blue-100'>
       <h1 className="text-4xl md:text-5xl font-black text-center 600  bg-clip-text drop-shadow-lg">
         DeepWork
       </h1>
@@ -18,8 +17,6 @@ function App() {
       <DailyPlanner />
       
     </div>
-      
-    </>
   )
 }
 
