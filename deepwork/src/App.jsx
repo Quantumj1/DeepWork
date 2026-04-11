@@ -1,22 +1,20 @@
-import React from 'react'
-import Navbar from './components/navbar'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Home from './components/Home'
 import DailyPlanner from './components/dailyplanner'
 import './App.css'
 
 function App() {
   return (
-    <div className='min-h-screen px-1 bg-blue-100'>
-      <h1 className="text-4xl md:text-5xl font-black text-center 600  bg-clip-text drop-shadow-lg">
-        DeepWork
-      </h1>
-      <p className="text-xl md:text-xl  text-center 600 ">
-        Your ultimate study companion – plan your days, master your schedule, achieve deep focus
-      </p>
-      <br />
-      <Navbar />
-      <DailyPlanner />
-      
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+        <main className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/planner" element={<DailyPlanner />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   )
 }
 
