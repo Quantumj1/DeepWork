@@ -4,9 +4,10 @@ function Home() {
   return (
       <div className="max-w-6xl text-center w-full min-h-screen flex flex-col items-center justify-center px-4">
         <div className="mb-2 p-4 content-center w-full">
-          <h1 className='text-5xl md:text-7xl text-transparent mb-10 leading-tight bg-clip-text text-white-700'>Welcome To DeepWork</h1>
-          <p className='text-5xl md:text-2xl max-w-3xl mx-0 leading-relaxed'>Productivity Reimagined</p>
-          <p className="text-5xl md:text-2xl max-w-3xl mx-0 leading-relaxed">
+          <img className='mx-auto' src="https://via.placeholder.com/150" alt="DeepWork Logo" />
+          <h1 className='text-5xl md:text-7xl text-transparent mb-10 bg-clip-text text-white'>Welcome To DeepWork</h1>
+          <p className='text-5xl md:text-2xl max-w-3xl mx-auto bg-clip-text text-white'>Productivity Reimagined</p>
+          <p className="text-5xl md:text-2xl max-w-3xl mx-auto bg-clip-text text-white">
             Your ultimate study companion for focused learning and productivity
           </p>
         </div>
