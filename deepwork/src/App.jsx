@@ -6,13 +6,13 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
-        <main className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <div className=" w-full min-h-screen bg-indigo-900 text-white-500 p-4 center-">
+        <div className="flex justify-center items-center min-h-[200px]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/planner" element={<DailyPlanner />} />
           </Routes>
-        </main>
+        </div>
       </div>
     </Router>
   )

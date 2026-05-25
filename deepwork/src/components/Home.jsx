@@ -2,14 +2,11 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <section className="flex items-center justify-center min-h-screen py-24 px-8">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="mb-16">
-          <h1 className="text-5xl md:text-7xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 
-          bg-clip-text text-transparent mb-8 leading-tight">
-            Welcome to DeepWork
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-12">
+      <div className="max-w-6xl text-center w-full min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="mb-2 p-4 content-center w-full">
+          <h1 className='text-5xl md:text-7xl text-transparent mb-10 leading-tight bg-clip-text text-white-700'>Welcome To DeepWork</h1>
+          <p className='text-5xl md:text-2xl max-w-3xl mx-0 leading-relaxed'>Productivity Reimagined</p>
+          <p className="text-5xl md:text-2xl max-w-3xl mx-0 leading-relaxed">
             Your ultimate study companion for focused learning and productivity
           </p>
         </div>
@@ -60,7 +57,6 @@ function Home() {
           </div>
         </div>
       </div>
-    </section>
   );
 }
 
