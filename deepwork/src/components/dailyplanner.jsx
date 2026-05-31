@@ -63,9 +63,11 @@ function DailyPlanner() {
 
   return (
     <>
-     <Navbar />
-      <div className="w-full max-w-6xl mx-auto p-6">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-xl">
+      <div className="w-full  mx-auto p-6">
+        <div className='mb-6'>
+          <Navbar />
+        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8 p-6 mx-20 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-xl">
           <div>
             <h2 className="text-3xl lg:text-4xl font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">
               Daily Planner
@@ -99,10 +101,10 @@ function DailyPlanner() {
           </button>
         </div>
       </div>
-
-      <div className="space-y-6">
+      {/* Task List */}
+      <div className="space-y-6 mx-20">
         <div>
-          <h3 className="text-2xl font-bold mb-6 text-gray-800">Tasks for {selectedDate.toLocaleDateString()}</h3>
+          <h3 className="text-2xl mb-6 text-white text-center">Tasks for {selectedDate.toLocaleDateString()}</h3>
           {todayTasks.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-3xl shadow-2xl border border-dashed border-gray-300">
               <div className="text-6xl mb-4">📝</div>
