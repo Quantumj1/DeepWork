@@ -25,9 +25,15 @@ function Navbar() {
             </Link>
             <Link 
               to="/planner" 
-              className="px-6 py-2 font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl hover:from-indigo-600 hover:to-purple-700 transition-all transform hover:-translate-y-0.5"
+              className="px-3 py-2 font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl hover:from-indigo-600 hover:to-purple-700 transition-all transform hover:-translate-y-0.5"
             >
               Daily Planner
+            </Link>
+            <Link 
+              to="/timetable" 
+              className="px-3 py-2 font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl hover:from-indigo-600 hover:to-purple-700 transition-all transform hover:-translate-y-0.5"
+            >
+              Timetable
             </Link>
           </div>
         </div>

@@ -61,7 +61,7 @@ function Home() {
         {/* Footer */}
         <div className='py-12 text-gray-500 text-sm text-center'>
           <p>Start your journey towards better productivity today!</p>
-          <p>copyright © 2026 DeepWork</p>
+          <p>Copyright © 2026 Osafo Builds</p>
         </div>
       </div>
   );

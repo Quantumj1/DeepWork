@@ -71,9 +71,9 @@ function DailyPlanner() {
           <div>
             <h2 className="text-3xl lg:text-4xl font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">
               Daily Planner
-          </h2>
-          <p className="text-xl text-gray-600">Plan your day, achieve more</p>
-        </div>
+            </h2>
+            <p className="text-xl text-gray-600">Plan your day, achieve more</p>
+          </div>
         <div className="flex flex-wrap gap-3">
           <button 
             className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"

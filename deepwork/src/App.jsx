@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './components/Home'
 import DailyPlanner from './components/dailyplanner'
+import TimeTableDialog from './components/timetabledialog'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/planner" element={<DailyPlanner />} />
+            <Route path="/timetable" element={<TimeTableDialog />} />
           </Routes>
         </div>
       </div>
