@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Navbar from './navbar';
 
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -82,10 +81,7 @@ const changeDate = (days) => {
 
   return (
     <>
-      <div className="w-full  mx-auto p-6">
-        <div className='mb-6'>
-          <Navbar />
-        </div>
+<div className="w-full  mx-auto p-6">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8 p-6 mx-20 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-xl">
           <div>
             <h2 className="text-3xl lg:text-4xl font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">
