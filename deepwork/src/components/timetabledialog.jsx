@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Plus } from "lucide-react";
 
 import { Button } from "./ui/button";
 import { TimetableGrid } from "./TimetableGrid";

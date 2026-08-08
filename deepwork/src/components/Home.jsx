@@ -6,8 +6,8 @@ function Home() {
         <div className="mb-2 p-4 content-center w-full">
           <img className='mx-auto w-20 h-20 rounded-full' src="./image/high-resolution-color-logo.png" alt="DeepWork Logo" />
           <h1 className='text-5xl md:text-7xl text-transparent mb-10 bg-clip-text text-white'>Welcome To DeepWork</h1>
-          <p className='text-4lg md:text-xl sm:text-base max-w-3xl mx-auto bg-clip-text text-white'>Productivity Reimagined</p>
-          <p className="text-4lg md:text-xl sm:text-base max-w-3xl mx-auto bg-clip-text text-white">
+          <p className='text-xl sm:text-base md:text-2xl max-w-3xl mx-auto text-white'>Productivity Reimagined</p>
+          <p className="text-xl sm:text-base md:text-2xl max-w-3xl mx-auto text-white">
             Your ultimate study companion for focused learning and productivity
           </p>
         </div>

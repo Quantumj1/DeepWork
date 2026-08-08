@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Navbar from './navbar';
 
+const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
 function DailyPlanner() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [newTask, setNewTask] = useState({title: '', time: '', description: '' });
@@ -39,11 +41,28 @@ function DailyPlanner() {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  const changeDate = (days) => {
+const changeDate = (days) => {
     const newDate = new Date(selectedDate);
     newDate.setDate(newDate.getDate() + days);
     setSelectedDate(newDate);
   };
+
+  // Jump to a specific weekday within the week containing the selected date.
+  const jumpToWeekday = (weekday) => {
+    const targetIndex = WEEKDAYS.indexOf(weekday); // 0 = Monday ... 6 = Sunday
+    if (targetIndex === -1) return;
+
+    const current = new Date(selectedDate);
+    // getDay(): 0 = Sunday ... 6 = Saturday. Normalize to Monday-based index.
+    const currentIndex = (current.getDay() + 6) % 7; // 0 = Monday ... 6 = Sunday
+
+    const delta = targetIndex - currentIndex;
+    const newDate = new Date(current);
+    newDate.setDate(newDate.getDate() + delta);
+    setSelectedDate(newDate);
+  };
+
+  const selectedWeekday = WEEKDAYS[(selectedDate.getDay() + 6) % 7];
 
   const handleEditTask = (task) => {
     setEditingTask(task);
@@ -93,13 +112,30 @@ function DailyPlanner() {
           >
             Tomorrow
           </button>
-          <button 
+<button 
             className="bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
             onClick={() => setSelectedDate(new Date())}
           >
             Today
           </button>
         </div>
+      </div>
+      {/* Weekday selector */}
+      <div className="flex flex-wrap justify-center gap-2 mb-6">
+        {WEEKDAYS.map((day) => (
+          <button
+            key={day}
+            type="button"
+            onClick={() => jumpToWeekday(day)}
+            className={`px-4 py-2 rounded-xl font-semibold text-sm transition-all transform hover:-translate-y-0.5 shadow-md hover:shadow-lg ${
+              selectedWeekday === day
+                ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white'
+                : 'bg-white text-slate-700 hover:bg-indigo-50'
+            }`}
+          >
+            {day}
+          </button>
+        ))}
       </div>
       {/* Task List */}
       <div className="space-y-6 mx-20">
@@ -167,7 +203,7 @@ function DailyPlanner() {
 
       {isAddDialogOpen && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto border border-white/20">
+<div className="bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto border border-white/20 text-slate-900">
             <h3 className="text-3xl font-black mb-8 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               {editingTask ? 'Edit Task' : 'New Task'}
             </h3>

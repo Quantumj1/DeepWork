@@ -108,11 +108,11 @@ export function AddClassDialog({
             <h3 className="text-3xl font-black bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               {isEdit ? "Edit Class" : "Add Class"}
             </h3>
-            <p className="text-slate-600 mt-2">Weekly timetable details</p>
+            <p className="text-black mt-2">Weekly timetable details</p>
           </div>
           <button
             type="button"
-            className="text-slate-600 hover:text-slate-900 text-2xl leading-none"
+            className="text-black-600 hover:text-black text-2xl leading-none"
             onClick={() => onOpenChange?.(false)}
             aria-label="Close"
           >
@@ -129,22 +129,22 @@ export function AddClassDialog({
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-black">
                 Title
               </label>
               <input
-                className="w-full p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all shadow-sm"
+                className="w-full text-black p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all shadow-sm"
                 value={form.title}
                 onChange={(e) => setForm({ ...form, title: e.target.value })}
                 placeholder="e.g., Computer Science"
               />
             </div>
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-black">
                 Day
               </label>
               <select
-                className="w-full p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all shadow-sm bg-white"
+                className="w-full text-black p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all shadow-sm bg-white"
                 value={form.day}
                 onChange={(e) => setForm({ ...form, day: e.target.value })}
               >
@@ -159,23 +159,23 @@ export function AddClassDialog({
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-black">
                 Start time
               </label>
               <input
                 type="time"
-                className="w-full p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all shadow-sm"
+                className="w-full text-black p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all shadow-sm"
                 value={form.startTime}
                 onChange={(e) => setForm({ ...form, startTime: e.target.value })}
               />
             </div>
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-black">
                 End time
               </label>
               <input
                 type="time"
-                className="w-full p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all shadow-sm"
+                className="w-full text-black p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all shadow-sm"
                 value={form.endTime}
                 onChange={(e) => setForm({ ...form, endTime: e.target.value })}
               />
@@ -184,22 +184,22 @@ export function AddClassDialog({
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-black">
                 Location
               </label>
               <input
-                className="w-full p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-purple-500/20 focus:border-purple-500 outline-none transition-all shadow-sm"
+                className="w-full text-black p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-purple-500/20 focus:border-purple-500 outline-none transition-all shadow-sm"
                 value={form.location}
                 onChange={(e) => setForm({ ...form, location: e.target.value })}
                 placeholder="e.g., Room 204"
               />
             </div>
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-slate-700">
+              <label className="block text-sm font-semibold text-black">
                 Instructor
               </label>
               <input
-                className="w-full p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-purple-500/20 focus:border-purple-500 outline-none transition-all shadow-sm"
+                className="w-full text-black p-3 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-purple-500/20 focus:border-purple-500 outline-none transition-all shadow-sm"
                 value={form.instructor}
                 onChange={(e) => setForm({ ...form, instructor: e.target.value })}
                 placeholder="e.g., Dr. Smith"
@@ -208,7 +208,7 @@ export function AddClassDialog({
           </div>
 
           <div className="space-y-2">
-            <label className="block text-sm font-semibold text-slate-700">
+            <label className="block text-sm font-semibold text-black">
               Color
             </label>
             <div className="flex flex-wrap gap-2">
