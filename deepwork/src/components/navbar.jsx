@@ -7,7 +7,7 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="items-center grid grid-rows-1 grid-flow-col gap-4">
             <div>
-              <img src="../image/high-resolution-color-logo.png" alt="DeepWork Logo" className="rounded-full h-10 w-10" />
+<img src="/image/high-resolution-color-logo.png" alt="DeepWork Logo" className="rounded-full h-10 w-10" />
             </div>
             <div>
               <h2 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
